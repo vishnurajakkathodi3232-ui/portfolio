@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0a1a2f, #050812);
+    color: #eaeaea;
+}
+
+/* HERO */
+.hero {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00d9ff;
+    box-shadow: 0 0 25px #00d9ff;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: #00d9ff;
+    text-shadow: 0 0 20px #00d9ff;
+}
+
+.role {
+    margin-top: 8px;
+    color: #b8ccff;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.btn, .btn-outline {
+    padding: 10px 22px;
+    margin: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn {
+    background: #00d9ff;
+    color: #000;
+    box-shadow: 0 0 20px #00d9ff;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #00d9ff;
+}
+
+.btn-outline {
+    border: 1px solid #00d9ff;
+    color: #00d9ff;
+}
+
+.btn-outline:hover {
+    background: #00d9ff;
+    color: #000;
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #00d9ff;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-list span {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: rgba(0,217,255,0.08);
+    border: 1px solid #00d9ff;
+    transition: 0.3s;
+}
+
+.skill-list span:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px #00d9ff;
+}
+
+/* PROJECTS */
+.project-card {
+    background: rgba(255,255,255,0.03);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(0,217,255,0.4);
+}
+
+.project-card h3 {
+    color: #00d9ff;
+}
+
+.project-card a {
+    margin-right: 15px;
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #00d9ff;
+}
