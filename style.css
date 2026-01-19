@@ -152,3 +152,71 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 0 18px rgba(0,217,255,0.5);
 }
+/* ============================= */
+/* MOBILE RESPONSIVE STYLES */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .profile-img {
+        width: 110px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn, .btn-outline {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* SKILLS */
+    .skill-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .skill-card img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* PROJECTS */
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-content {
+        padding: 15px;
+    }
+
+    /* TEXT */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p, li, span {
+        font-size: 0.95rem;
+    }
+}
