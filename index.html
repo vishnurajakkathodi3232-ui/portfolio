@@ -5,77 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishnuraj A | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
 
 <header class="hero">
-    <div class="hero-content">
-        <img src="assets/Vishnuraj.png" alt="Vishnuraj A" class="profile-img">
+    <button id="theme-toggle">🌙</button>
 
-        <h1>Vishnuraj A</h1>
-        <p class="role">Python Full Stack Developer</p>
+    <img src="assets/Vishnuraj.png" class="profile-img" alt="Vishnuraj A">
+    <h1>Vishnuraj A</h1>
+    <p class="role">Python Full Stack Developer</p>
 
-        <div class="hero-buttons">
-            <a href="assets/VISHNURAJ.pdf" download class="btn">Download Resume</a>
-            <a href="https://linkedin.com/in/vishnuraj-a-232bb3303" target="_blank" class="btn-outline">LinkedIn</a>
-        </div>
+    <div class="hero-buttons">
+        <a href="assets/VISHNURAJ.pdf" download class="btn">Download Resume</a>
+        <a href="https://linkedin.com/in/vishnuraj-a-232bb3303" target="_blank" class="btn-outline">LinkedIn</a>
     </div>
 </header>
+<section class="skills-section">
+    <h2>Skills & Technologies</h2>
 
-<section class="about">
-    <h2>About Me</h2>
-    <p>
-        Python Full Stack Developer with hands-on experience building scalable web applications using Django and REST APIs.
-        Passionate about clean backend logic, real-world problem solving, and continuous learning.
-    </p>
-</section>
+    <!-- Programming Languages -->
+    <div class="skill-group">
+        <h3>Programming Languages</h3>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <img src="assets/skills/python-svgrepo-com.svg" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/skills/javascript-logo-svgrepo-com.svg" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/skills/HTML5_logo_and_wordmark.svg" alt="HTML">
+                <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/skills/CSS3_logo_and_wordmark.svg" alt="CSS">
+                <span>CSS3</span>
+            </div>
+        </div>
+    </div>
 
-<section class="skills">
-    <h2>Skills</h2>
-    <div class="skill-list">
-        <span>Python</span>
-        <span>Django</span>
-        <span>REST API</span>
-        <span>MySQL</span>
-        <span>PostgreSQL</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Bootstrap</span>
-        <span>JavaScript</span>
-        <span>React (Basic)</span>
+    <!-- Frameworks & APIs -->
+    <div class="skill-group">
+        <h3>Frameworks & APIs</h3>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <img src="assets/skills/django-icon-svgrepo-com.svg" alt="Django">
+                <span>Django</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/skills/rest-api-icon.svg" alt="REST API">
+                <span>REST API</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-group">
+        <h3>Databases</h3>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <img src="assets/skills/mysql-logo-svgrepo-com.svg" alt="MySQL">
+                <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+                <img src="assets/skills/postgresql-logo-svgrepo-com.svg" alt="PostgreSQL">
+                <span>PostgreSQL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools & Platforms -->
+    <div class="skill-group">
+        <h3>Tools & Platforms</h3>
+        <div class="skill-grid">
+            <div class="skill-card"><span>Git</span></div>
+            <div class="skill-card"><span>GitHub</span></div>
+            <div class="skill-card"><span>Postman</span></div>
+            <div class="skill-card"><span>Razorpay</span></div>
+            <div class="skill-card"><span>SMTP / Email</span></div>
+            <div class="skill-card"><span>Bootstrap</span></div>
+            <div class="skill-card"><span>VS Code</span></div>
+            <div class="skill-card"><span>PythonAnywhere</span></div>
+            <div class="skill-card"><span>Deployment</span></div>
+        </div>
     </div>
 </section>
 
-<section class="projects">
+<section>
     <h2>Projects</h2>
 
+    <!-- PetVerse -->
     <div class="project-card">
-        <h3>PetVerse</h3>
-        <p>Pet service portal connecting pet owners, shelters, adopters and service providers.</p>
-        <a href="https://github.com/vishnurajakkathodi3232-ui/petverse_project" target="_blank">GitHub</a>
-        <a href="https://vishnuraj3232.pythonanywhere.com/" target="_blank">Live</a>
+        <img src="assets/projects/petverse.png" alt="PetVerse">
+        <div class="project-content">
+            <h3>PetVerse</h3>
+            <p class="stack">Built with: Django, MySQL, Razorpay, Bootstrap</p>
+            <ul>
+                <li>Implemented role-based access for pet owners, shelters and admins</li>
+                <li>Integrated Razorpay payments and session-based cart system</li>
+                <li>Designed database models and deployed live on PythonAnywhere</li>
+            </ul>
+            <a href="https://github.com/vishnurajakkathodi3232-ui/petverse_project" target="_blank">GitHub</a>
+            <a href="https://vishnuraj3232.pythonanywhere.com/" target="_blank">Live</a>
+        </div>
     </div>
 
+    <!-- Temple -->
     <div class="project-card">
-        <h3>Temple Offerings Booking Portal</h3>
-        <p>Digital platform for temple offerings, donations and event tracking.</p>
-        <a href="https://github.com/vishnurajakkathodi3232-ui/Personal-Projects-_-/tree/main/TEMPLE_OFFERING_BOOKING_PORTAL" target="_blank">GitHub</a>
+        <img src="assets/projects/temple.png" alt="Temple Portal">
+        <div class="project-content">
+            <h3>Temple Offerings Booking Portal</h3>
+            <p class="stack">Built with: Django, PostgreSQL, Bootstrap</p>
+            <ul>
+                <li>Developed devotee booking flow for temple offerings and events</li>
+                <li>Built admin panel for managing offerings and schedules</li>
+                <li>Implemented email confirmations and dummy payment workflow</li>
+            </ul>
+            <a href="https://github.com/vishnurajakkathodi3232-ui/Personal-Projects-_-/tree/main/TEMPLE_OFFERING_BOOKING_PORTAL" target="_blank">GitHub</a>
+        </div>
     </div>
 
+    <!-- Ecommerce -->
     <div class="project-card">
-        <h3>Ecommerce Project</h3>
-        <p>Django-based ecommerce application with core shopping features.</p>
-        <a href="https://github.com/vishnurajakkathodi3232-ui/Django-Project/tree/main/EcommerceProject" target="_blank">GitHub</a>
+        <img src="assets/projects/ecommerce.png" alt="Ecommerce">
+        <div class="project-content">
+            <h3>Ecommerce Project</h3>
+            <p class="stack">Built with: Django, HTML, CSS, JS</p>
+            <ul>
+                <li>Implemented product listing, cart and order workflow</li>
+                <li>Designed backend logic using Django ORM</li>
+            </ul>
+            <a href="https://github.com/vishnurajakkathodi3232-ui/Django-Project/tree/main/EcommerceProject" target="_blank">GitHub</a>
+        </div>
     </div>
 </section>
 
 <footer>
     <p>📧 vishnurajakkathodi3232@gmail.com</p>
-    <div class="links">
-        <a href="https://github.com/vishnurajakkathodi3232-ui" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/vishnuraj-a-232bb3303" target="_blank">LinkedIn</a>
-    </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
